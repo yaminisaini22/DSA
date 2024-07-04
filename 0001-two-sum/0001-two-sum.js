@@ -7,7 +7,7 @@
 var twoSum = function(nums, target) {
     // Step 1: Create a hashmap to store the value and its index
     const map = new Map();
-
+//helloooooo
     //Step 2: Iterate through the array
     for(let i = 0; i < nums.length; i++){
         // Step 3: Calculate the complement of the current element
