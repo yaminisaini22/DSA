@@ -11,6 +11,7 @@ let reverse = function( arr,i ,j){
 }
 let rotateAntiClockRight = function(arr, k)
 {
+    k = k%arr.length;
     reverse(arr,0,arr.length-1);
     reverse(arr,0,k-1);
     reverse(arr,k,arr.length-1);
@@ -18,6 +19,7 @@ let rotateAntiClockRight = function(arr, k)
 }
 let rotateClockleft = function(arr, k)
 {
+    k = k%arr.length;
     reverse(arr,0,k-1);
     reverse(arr,k,arr.length-1);
     reverse(arr,0,arr.length-1);
