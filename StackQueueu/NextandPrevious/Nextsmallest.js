@@ -1,8 +1,8 @@
- let prevSmaller = function(A){
+ let nextSmallestElement = function(A){
        let stack = [];
        const nse = new Array(A.length).fill(-1);
        let n = A.length;
-       for(let i = 0;i<=n-1;i++){
+       for(let i = (2*n)-1;i>=0;i--){
            while(stack.length>0 && stack[stack.length-1]>=A[i])
            {
                stack.pop();
@@ -20,4 +20,4 @@
        return nse;
     }
    const nums = [1, 2, 1];
-   console.log(prevSmaller(nums));    
+   console.log(nextSmallestElement(nums));    

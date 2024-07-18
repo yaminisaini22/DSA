@@ -1,3 +1,9 @@
+// Summary Table
+// Function	Direction	Purpose
+// NGE	Right	Find the next greater element to the right
+// NSE	Right	Find the next smaller element to the right
+// PGE	Left	Find the previous greater element to the left
+// PSE	Left	Find the previous smaller element to the left
 var nextGreaterElements = function(nums) {
     let stack = [];
     const nge = new Array(nums.length).fill(-1);
