@@ -3,7 +3,7 @@ var asteroidCollision = function(asteroids) {
     let stack = []
     for (let i = 0;i<n;i++)
     {
-         asteroid = asteroids[i];
+         let asteroid = asteroids[i];
          while(stack.length>0 && stack[stack.length-1] >0 && asteroid<0) // collision (when stack.top>0 asteroid<0 and   stack.length>0)
          {
             if (Math.abs(asteroid) ===Math.abs(stack[stack.length-1])){
@@ -16,7 +16,7 @@ var asteroidCollision = function(asteroids) {
             
             else{
                 asteroid = 0
-                }// stack asteroid is greater
+                }// stack is greater
          }
          if (asteroid !== 0)
          {

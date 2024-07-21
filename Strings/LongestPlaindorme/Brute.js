@@ -18,7 +18,7 @@ let longestpalindrome= function(s){
     for(let i =0;i<n;i++){
         for(let j=i+1;j<n;j++){
             let substring = s.substring(i,j)
-            if(isplaindrome(substring)&& substring.length>maxlength){
+            if(isplaindrome(substring)&& substring.length>maxlength){ //if we only have to count the longest paldinrome we will only do count++
                 maxlength = substring.length;
                 longest = substring;
             }
