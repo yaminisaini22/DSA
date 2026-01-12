@@ -13,7 +13,7 @@ let moveElement = function(arr,k){
             i++;
         }
         return arr;
-}
+} 
 const arr =[1,0,0,0,2,4]
 k =0;
 const result =moveElement(arr, k);

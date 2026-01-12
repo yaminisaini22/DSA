@@ -10,7 +10,6 @@ let Soltuion = function(arr)
                 {
                     largestElement=arr[i];
                     return largestElement;
-                    break;
                 }
         }
     }

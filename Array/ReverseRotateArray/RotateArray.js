@@ -9,7 +9,7 @@ let reverse = function( arr,i ,j){
             j--;
         }
 }
-let rotateAntiClockRight = function(arr, k)
+let rotateClockRight = function(arr, k)
 {
     k = k%arr.length;
     reverse(arr,0,arr.length-1);
@@ -17,7 +17,7 @@ let rotateAntiClockRight = function(arr, k)
     reverse(arr,k,arr.length-1);
     return arr;
 }
-let rotateClockleft = function(arr, k)
+let rotateAntiClockleft = function(arr, k)
 {
     k = k%arr.length;
     reverse(arr,0,k-1);
@@ -29,7 +29,7 @@ let rotateClockleft = function(arr, k)
 const arr1= [1,2,3,4,5,6];
 const arr2 = [1, 2, 3, 4, 5, 6];
 let k =2;
-const result = rotateAntiClockRight(arr1 , k);
-const result2 = rotateClockleft(arr2 , k);
-console.log("Anti clockwise Rotated array to the right by",k,"value is :",result);
-console.log("Clockwise Rotated array to the left by",k,"value is :",result2);
+const result = rotateClockRight(arr1 , k);
+const result2 = rotateAntiClockleft(arr2 , k);
+console.log("clockwise Rotated array to the right  by",k,"value is :",result);
+console.log(" Anti Clockwise Rotated array to the left by",k,"value is :",result2);

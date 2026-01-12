@@ -3,14 +3,14 @@ let stackspan = function(price) {
     let stack = [];
     let ans = new Array(n).fill(0);
 
-    for (let i = 0; i < n; i++) {
+    for (let i = n-1; i >= 0; i--) {
         while (stack.length > 0 && price[i] >= price[stack[stack.length - 1]]) {
             stack.pop();
         }
         if (stack.length === 0) {
             ans[i] = i + 1;
         } else {
-            ans[i] = i - stack[stack.length - 1];
+            ans[i] = stack[stack.length - 1]- 1;
         }
         stack.push(i);
     }

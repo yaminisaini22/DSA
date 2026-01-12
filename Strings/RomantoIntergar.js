@@ -7,7 +7,7 @@ L :  50,
 C :  100,
 D :  500,
 M :  1000
- }
+ }  //IV
 let add =0;
  for (let i =0;i<s.length;i++){
     if(romanintmap[s[i]]<romanintmap[s[i+1]]){
